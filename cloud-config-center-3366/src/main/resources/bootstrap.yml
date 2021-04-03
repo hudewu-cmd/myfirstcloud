@@ -9,12 +9,19 @@ spring:
        name: config
        profile: dev
        uri: http://127.0.0.1:3344
-
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
 
-config:
-   info: 1233
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

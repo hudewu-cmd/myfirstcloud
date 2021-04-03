@@ -1,14 +1,14 @@
 server:
-  port: 3366
+  port: 3377
 spring:
   application:
     name: cloud-config-client
   cloud:
     config:
-       label: master
-       name: config
-       profile: dev
-       uri: http://127.0.0.1:3344
+      label: master
+      name: config
+      profile: dev
+      uri: http://127.0.0.1:3344
   rabbitmq:
     host: localhost
     port: 5672

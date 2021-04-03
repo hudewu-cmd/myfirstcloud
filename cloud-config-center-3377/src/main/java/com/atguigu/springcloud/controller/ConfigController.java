@@ -16,6 +16,6 @@ public class ConfigController {
 
     @GetMapping("/config")
     public String config(){
-        return config+" 3366 port";
+        return config+" 3377 port";
     }
 }
