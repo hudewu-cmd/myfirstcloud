@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: cloud-order-service #服务名称
+  zipkin:
+    base-url: http://127.0.0.1:9411
+  sleuth:
+    sampler:
+      probability: 1
+
 
 PAYMENT_URL: http://cloud-payment-service/
 
